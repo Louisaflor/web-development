@@ -4,17 +4,19 @@
         <title>table</title>
 
         <style>
-            table, td {border: 1px solid black}
+            table, td, th {border: 1px solid black}
         </style>
     </head>
     <body>
       <h1>Louisa's Table</h1>
 
       <table>
+
+        
           <!--table head give header for each row-->
           <th>Band Name</th>
           <th>Order</th>
-          <th>Music</th>
+          <th>Music Style</th>
 
           <tr>
               <td>Beatles</td>
@@ -39,6 +41,15 @@
             <td> #4 Fav</td>
             <td>Soul</td>
           </tr>
+
+          <tfoot>
+              <!--use <tfoot> to add a footer to your table-->
+            <tr>
+                <td colspan="3">Louisa's Favorite Band Name</td>
+                <!--colspan should span 3 columns, 
+                    telling html how far we want to expand the column to-->
+            </tr>
+          </tfoot>
 
       </table>
     </body>
