@@ -8,7 +8,16 @@
         <!--We are trying to understand how to make a form where the user fills
         out information to send-->
 
-        <form name="login"> <!--using name attribute ot name our form-->
+        <h1>Form that the user needs to fill out</h1>
+
+        <form name="login" action="process-forms.php"> <!--using NAME attribute ot name our form
+                                and the ACTION is where the information be submitted to -->
+                                <!--PHP codes are placed in PHP pages-->
+            <input type="text" name="username">
+            <input type="password" name="password">
+            <input type="submit">  
+
+            <!--NOTE: HTML does not process information-->
 
         </form>
 
