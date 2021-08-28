@@ -13,14 +13,15 @@
         <form name="login" action="process-forms.php" method="get"> <!--using NAME attribute ot name our form
                                 and the ACTION is where the information be submitted to -->
                                 <!--PHP codes are placed in PHP pages-->
+            Username:
             <input type="text" name="username">
 
             <br> 
-
+            Password:
             <input type="password" name="password">
 
             <br>
-
+            Please Select your Favorite Car: `
             <select name="cars">
                 <option value="volvo">volvo</option>
                 <option value="fiat">fiat</option>
@@ -33,12 +34,12 @@
             </select>
 
             <br>
+            Comments:
+            <br>
+            <textarea name="comments" rows="10" cols="30"></textarea>
 
-            <textarea name="comments" rows="10" cols="30">
-                <!--textarea is a textbox that users can type and will need rows and cols as attributes as well
+            <!--textarea is a textbox that users can type and will need rows and cols as attributes as well
                 as name-->
-
-            </textarea>
 
             <br> 
             <input type="submit">  
