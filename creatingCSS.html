@@ -15,8 +15,15 @@
                 text-align: center;
                 }
             
-            p {
+            p.italic { /* NO SPACE */
                 text-indent: 50px;
+                font-style: italic;
+                font-weight: bold;
+            }
+
+            p .span { /*WITH SPACE*/
+                font-style: oblique;
+                font-weight: bold;
             }
             
 
@@ -32,11 +39,11 @@
         
         <h1>The Main Heading</h1>
         <p>Studioweb is an interactive video question and answer training system. 
-        We focus on teaching the key basic concepts and techniques of web design and web programming.</p>
+        We focus on teaching the <span class="span">key basic concepts</span>  and techniques of web design and web programming.</p>
 
         <h3>A Sub Heading</h3>
 
-        <p>Studioweb is an interactive video question and answer training system. We focus on teaching
+        <p class="italic">Studioweb is an interactive video question and answer training system. We focus on teaching
         the key basic concepts and techniques of web design and web programming. Learn more:</p>
 
         <ol>
