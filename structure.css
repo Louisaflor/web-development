@@ -1,0 +1,7 @@
+/* Tag Selectors for creatingCSS.html */
+
+body {
+  font-size: 14px;
+  font-family: monospace, Georgia, "Times New Roman";
+  /* first option, second option, third option */
+}
