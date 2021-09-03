@@ -1,8 +1,28 @@
 /* Tag Selectors for creatingCSS.html */
 
 body {
-  color: black
+  color: black;
   font-size: 17px;
   font-family: "Hina Mincho", serif;
   /* first option, second option, third option */
+  max-width: 1000px;
+  max-height: 1000px;
+}
+
+p {
+  text-indent: 30px;
+}
+
+p.italic {
+  /* NO SPACE */
+  font-style: italic;
+  font-family: "Slabo 27px", serif;
+  font-size: 18px;
+}
+
+p .span {
+  /*WITH SPACE*/
+  font-style: oblique;
+
+  font-weight: bold;
 }
