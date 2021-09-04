@@ -10,6 +10,12 @@ body {
   background-color: white;
 }
 
+#centerDoc,
+nav {
+  margin-left: 235px;
+  margin-top: 50px;
+}
+
 p {
   text-indent: 30px;
 }
@@ -32,8 +38,6 @@ h3,
 h1 {
   background-color: violet;
   max-width: 1000px;
-}
-
-ol {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  border-bottom-style: solid;
+  border-bottom-width: 10px;
 }
