@@ -38,8 +38,8 @@ h3,
 h1 {
   background-color: violet;
   max-width: 1000px;
-  border-style: dotted;
-  border-bottom-width: 3px;
+  border: 10px solid black;
+
   padding: 20px;
   margin: 20px;
 }
