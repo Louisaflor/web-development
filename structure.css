@@ -2,22 +2,41 @@
 
 body {
   color: black;
-  font-size: 17px;
+  font-size: 18px;
   font-family: "Hina Mincho", serif;
   /* first option, second option, third option */
-  max-width: 1200px;
-  max-height: 1200px;
-  background-color: white;
+  background-color: blue;
+  background: url("images/milky-way-starry-sky-night-sky-star-956999.jpeg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-#centerDoc,
-nav {
+#centerDoc {
+  position: absolute;
   margin-left: 235px;
   margin-top: 50px;
 }
 
+h1,
+h2,
+h3 {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+h3,
+h1 {
+  font-size: 30px;
+  background-color: #9bc4d8;
+  max-width: 500px;
+  padding: 10px;
+  margin: 20px;
+}
+
 p {
   text-indent: 30px;
+  text-align: justify;
+  width: 80%;
 }
 
 p.italic {
@@ -25,21 +44,55 @@ p.italic {
   font-style: italic;
   font-family: "Slabo 27px", serif;
   font-size: 18px;
+  max-width: 500ps;
 }
 
 p .span {
-  /*WITH SPACE*/
+  /*WITH SPACE so any p that has a class .span inside*/
   font-style: oblique;
 
   font-weight: bold;
 }
 
-h3,
-h1 {
-  background-color: violet;
-  max-width: 1000px;
-  border: 10px solid black;
+ul li {
+  list-style-type: none;
+  text-decoration: none;
+}
 
-  padding: 20px;
-  margin: 20px;
+nav {
+  position: absolute;
+  z-index: 10;
+  width: 210px;
+  height: 600px;
+  margin: 0;
+  border-right: 1px solid #000000;
+  font-weight: normal;
+}
+
+/* visited and unvisited link */
+
+a:visited,
+a:link {
+  color: black;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #9bc4d8;
+  margin: 10px;
+  display: block;
+  width: 145px;
+  text-decoration: none;
+}
+
+/* hover links */
+
+a:hover {
+  color: blue;
+  background-color: #9bc4d8;
+  padding: 5px;
+  font-family: monospace;
+  margin-bottom: 30px;
+}
+
+#centerDoc a {
+  background-color: transparent;
 }
