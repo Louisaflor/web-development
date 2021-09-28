@@ -54,13 +54,22 @@ ul li {
   margin: 10px;
 }
 
-a:link,
-a:visited {
+nav a:link,
+nav a:visited {
   text-decoration: none;
   color: green;
+}
+
+main a:link {
+  color: blueviolet;
+  text-decoration: none;
 }
 
 a:hover {
   color: cadetblue;
   text-decoration: none;
+}
+
+a:link {
+  color: chartreuse;
 }
