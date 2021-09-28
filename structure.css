@@ -56,7 +56,7 @@ p .span {
 
 ul li {
   list-style-type: none;
-  text-decoration: none;
+  text-decoration: none; /*this is incorrect it has to be in the a:link style*/
 }
 
 nav {

@@ -5,15 +5,19 @@ nav {
 
 img {
   float: right;
+  margin: 10px;
+  margin-right: 20%;
+  margin-top: 10%;
 }
 
 body {
-  font-family: "Halant", serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 14px;
 }
 
 p {
   width: 80%;
+  margin: 20px;
 }
 
 h1 {
@@ -21,12 +25,42 @@ h1 {
   font-size: 30px;
 }
 
+nav {
+  width: 20%;
+  height: 600px;
+  border-right: 1px solid black;
+}
+
 main {
-  position: absolute; /* so if we want to move the <main> around 
-                        we need to style it into a position property */
-  margin-left: 235px;
+  width: 78%;
+  float: right;
+  padding: 0 0 20px 20px;
   margin-top: 50px;
 }
 
-nav {
+h2 {
+  font-weight: bold;
+  text-align: center;
+}
+
+ol li {
+  margin: 10px;
+  line-height: 180%;
+  width: 65%;
+}
+
+ul li {
+  list-style-type: circle;
+  margin: 10px;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: green;
+}
+
+a:hover {
+  color: cadetblue;
+  text-decoration: none;
 }
