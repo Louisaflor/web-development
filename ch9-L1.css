@@ -1,3 +1,9 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+}
+
 main,
 nav {
   display: block;
@@ -25,17 +31,40 @@ h1 {
   font-size: 30px;
 }
 
-nav {
+#navigation {
   width: 20%;
   height: 600px;
-  border-right: 1px solid black;
+  margin-top: 50px;
+  /*border-right: 1px solid black; */
+  background-color: lightblue;
+  border-width: 1px;
+  border-color: blue;
+  border-style: solid;
 }
 
 main {
-  width: 78%;
+  width: 76%;
   float: right; /*floats are often used to create columns in web pages.*/
   padding: 0 0 20px 20px;
-  margin-top: 50px;
+
+  background-color: lightblue;
+  border-width: 1px;
+  border-style: solid;
+  border-color: blue;
+}
+
+#footer {
+  clear: both;
+  display: block;
+  background-color: lightblue;
+  border: 1px blue solid;
+  float: right;
+  width: 78%;
+  padding: 5px;
+  margin: 10x 10px; /*for some reason this one does not work but the second onw does */
+  margin: 10px 10px;
+
+  text-align: right;
 }
 
 h2 {
