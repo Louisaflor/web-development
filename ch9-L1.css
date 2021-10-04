@@ -61,8 +61,8 @@ main {
   float: right;
   width: 78%;
   padding: 5px;
-  margin: 10x 10px; /*for some reason this one does not work but the second onw does */
-  margin: 10px 10px;
+  margin: 10px 10px; /*for some reason this one does not work but the second onw does */
+  /* margin: 10px 10px; */
 
   text-align: right;
 }
