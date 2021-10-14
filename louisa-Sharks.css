@@ -15,12 +15,19 @@ body {
   color: #ffffff; /*this makes the | turn white, not the text*/
 }
 
+#nav a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px;
+}
+
 #heading1 {
   text-align: center;
 }
 
 #heading1 h1 {
   color: #158cc0;
+  font-size: 50px;
   font-family: "Abel", sans-serif;
   text-align: center;
   padding: 5px;
@@ -29,25 +36,34 @@ body {
 
 #heading-image {
   background-image: url(./images/shark-attacks.jpg);
+  text-align: center;
   height: 400px;
-  width: 90%;
+  width: 100%;
   margin: 30px auto 25px auto;
   padding: 10px;
   border-radius: 10px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed; /*if you want the image the flow with page use scroll*/
 }
 
 #sharkSemester {
   position: relative;
   font-family: "Creepster", cursive;
-  font-size: 120px;
+  font-size: 9vw;
   text-align: center;
   opacity: 0.7;
   color: white;
   margin: 50px auto auto auto;
+  top: 20%;
   letter-spacing: 20px; /*or use 2vw so fonts won't stack. In other words, px forces font stacking.*/
+}
+
+h2 {
+  color: #158cc0;
+  padding: 10px;
+  font-size: 2em;
+  text-align: center;
 }
 
 #topleft {
@@ -69,9 +85,31 @@ body {
   background-color: rgba(217, 237, 249, 0.4);
   width: 80%;
   margin-top: 100px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
   clear: both;
+}
+
+ol li {
+  list-style-type: none;
+  margin: 10px;
+}
+
+#video {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 100px;
+}
+video {
+  width: 90%;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  background-color: #158cc0;
+  padding: 15px;
 }
