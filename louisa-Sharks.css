@@ -67,16 +67,37 @@ h2 {
 }
 
 #topleft {
-  margin-left: 100px;
-  width: 40%;
   float: left;
-  margin-bottom: 30px;
+  width: 40%;
+  margin: 5%;
+  /* margin-left: 100px;
+  width: 50%;
+  margin-bottom: 30px; */
 }
 
 #topright {
   float: right;
   width: 40%;
-  margin-right: 100px;
+  margin: 5%;
+  /*margin-right: 100px;
+  width: 40%; */
+}
+
+@media screen and (max-width: 800px) {
+  #topleft {
+    width: 90%;
+  }
+  #topright {
+    clear: both;
+    float: none;
+    width: 90%;
+  }
+
+  h2 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 30px;
+    color: darkblue;
+  }
 }
 
 #css-Table {
