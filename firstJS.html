@@ -13,10 +13,14 @@
 
             //Event Handler, onclick = in the event you click on the button, run the function myFunction
 
+            function myFunc() {
+                alert("Page loading, while you're waiting the date is " + new Date())
+            }
+
         </script>
     </head>
 
-    <body>
+    <body onload="myFunc()">
         <h1>Welcome Uber Nerdling!</h1>
 
         <button id="butt" onclick="myFunction('button')">Try it</button>
