@@ -9,6 +9,11 @@
                 console.log("Something happened: " + message)
             }
 
+            document.getElementById("butt").onclick = function() {
+                myFunction('you clicked on button')
+
+            }
+
         </script>
 
         
@@ -30,7 +35,8 @@
     <body onresize="myFunc('You resized the window!')">
         <h1>Welcome Uber Nerdlings!</h1>
 
-        <button id="butt" onclick="myFunc('you clicked on button')">Try it</button>
+        <input type="text" onchange="myFunc('It changed!')">
+        <button id="butt">Try it</button>
 
         <p onclick="myFunc('You clicked on the first paragraph')">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
             aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
