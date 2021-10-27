@@ -1,0 +1,16 @@
+#secondP {
+  width: 200px;
+  background-color: #afe6a5;
+  float: right;
+}
+
+p:hover,
+button:hover {
+  cursor: pointer;
+}
+
+input,
+button {
+  display: block;
+  margin-bottom: 10px;
+}
