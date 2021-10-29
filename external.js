@@ -37,12 +37,25 @@ console.log(findAt) // it will show 14
 alert("Another alert!: " + "yonzonlouisa25@icloud.com has " + "yonzonlouisa25@icloud.com".indexOf("@") + " letters.")
 //This alert kinda makes it difficult to read so we use the var to help clean up the code
 
-function numberCheck() {
+ /*
+ function numberCheck() {
     var myNumber = "Louisa"
     var result = isNaN(myNumber)
     console.log(result)
 }
 
+
+*/
+
+function intCheck() {
+    var myNum = " 32 + Louisa";
+    var secResult = parseInt(myNum) // so for this function it converts a string and turns it into an integer 
+                                    //but the integer in the string has to be the first string... which is weird 
+    /*console.log(secResult) */
+    console.log(secResult + 32)
+
+}
+
 document.getElementById("activate").onclick= function() {
-    numberCheck()
+    intCheck()
 }
