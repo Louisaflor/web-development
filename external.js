@@ -35,3 +35,14 @@ console.log(findAt) // it will show 14
 // here is another way to do this indexOf() function
 
 alert("Another alert!: " + "yonzonlouisa25@icloud.com has " + "yonzonlouisa25@icloud.com".indexOf("@") + " letters.")
+//This alert kinda makes it difficult to read so we use the var to help clean up the code
+
+function numberCheck() {
+    var myNumber = "Louisa"
+    var result = isNaN(myNumber)
+    console.log(result)
+}
+
+document.getElementById("activate").onclick= function() {
+    numberCheck()
+}
