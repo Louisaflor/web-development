@@ -16,8 +16,9 @@
 		Remember that JS is case sensitive.                                                       true and false , yes and no, 1 and 0         
 		*/
 
-	if(1 > 4) 
-	{
+
+
+	if(1 > 4) {
 	
 	console.log("It's true, so display this text!");
 	alert("It's true");
@@ -26,10 +27,27 @@
 		console.log("It's not true!");
 
 	}
+
+    if ( 2 > 1) {
+        console.log ("2 is greater that 1 so this is also true!")
+        alert("This if statement is true so this alert text will show")
+    }
 		
 
 		var firstName;
-		function stefForgets() {}
+		function stefForgets() {} // this is to just to prove how important that JS is case sensitive 
+
+        function runIt() {
+            var target = document.getElementById("first")
+            var currentValue = target.innerHTML
+            console.log(currentValue)
+
+            if (1 > 0) {
+                target.innerHTML = "1 is greater than 0"
+            }
+
+
+        }
 		
 		</script>
 		
@@ -41,7 +59,17 @@
 
 		<button id="activator" type="button">Activate it!</button>
 
-		<p id="first">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Dog biscuits.</p>
+		<p id="first">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+             ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+             nisi ut aliquip ex ea commodo consequat. Dog biscuits.</p>
+
+        <script>
+            document.getElementById("activator").onclick = function() {
+                runIt();
+
+            }
+        
+        </script>
 
 	</body>
 </html>
