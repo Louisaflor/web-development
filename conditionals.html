@@ -46,6 +46,17 @@
                 target.innerHTML = "1 is greater than 0"
             }
 
+        }
+
+        function activateIt() {
+            var secTarget = document.getElementById("second");
+            var changeIt = secTarget.innerHTML;
+            console.log(changeIt)
+
+            if (10 > 2) {
+                
+                secTarget.innerHTML = "Yes, 10 is greater than 1. You are smart!"
+            }
 
         }
 		
@@ -59,7 +70,13 @@
 
 		<button id="activator" type="button">Activate it!</button>
 
+        <button id="anotherOne">Click me!</button>
+
 		<p id="first">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+             ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+             nisi ut aliquip ex ea commodo consequat. Dog biscuits.</p>
+		
+        <p id="second">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
              ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
              nisi ut aliquip ex ea commodo consequat. Dog biscuits.</p>
 
@@ -67,6 +84,10 @@
             document.getElementById("activator").onclick = function() {
                 runIt();
 
+            }
+
+            document.getElementById("anotherOne").onclick = function() {
+                activateIt();
             }
         
         </script>
