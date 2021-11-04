@@ -59,6 +59,20 @@
             }
 
         }
+
+        function louisaRun() {
+            var louisaStr = "Louisa"
+            var index = louisaStr.indexOf("@")
+            console.log(index)
+
+            if (index != -1) {
+                console.log("The result is: " + index)
+                console.log(true)
+            } else {
+                console.log("The result is: " + index)
+                console.log(false)
+            }
+         }
 		
 		</script>
 		
@@ -71,6 +85,8 @@
 		<button id="activator" type="button">Activate it!</button>
 
         <button id="anotherOne">Click me!</button>
+
+        <button id="louisa">Louisa!</button>
 
 		<p id="first">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
              ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
@@ -88,6 +104,10 @@
 
             document.getElementById("anotherOne").onclick = function() {
                 activateIt();
+            }
+
+            document.getElementById("louisa").onclick = function() {
+                louisaRun();
             }
         
         </script>
