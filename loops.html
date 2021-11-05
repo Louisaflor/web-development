@@ -33,6 +33,19 @@ Nerd term: evaluate the condition!
         
 			}
 
+            function doIt() {
+                var louisaLoop = 10
+
+                while ( louisaLoop > 0 ) {
+                    console.log("louisaLoop is now: " + louisaLoop);
+                    louisaLoop = louisaLoop - 1;
+                }
+
+                console.log("Here is the end of the loop")
+            }
+
+
+
 		</script>
 
 	
@@ -44,6 +57,8 @@ Nerd term: evaluate the condition!
 		<input type="button" id="looper" value="Do it again!">
 		<p id="target"></p>
 
+        <button id="secButton">Click me!</button>
+
 		
 
 	<script>
@@ -51,6 +66,11 @@ Nerd term: evaluate the condition!
 			doItAgain();
 			this.style.color = "blue";
 		}
+		document.getElementById("secButton").onclick=function(){
+            doIt();
+		}
+
+
 	</script>
 	</body>
 </html>
