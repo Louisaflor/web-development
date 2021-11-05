@@ -26,7 +26,7 @@ Nerd term: evaluate the condition!
                     // this type of loop will do it over and over it again this argument has been met
 
 						console.log("LoopCount is now: " + loopCount);
-						loopCount = loopCount -1;
+						loopCount = loopCount - 1;
 					}
 
 				console.log("End loop");
@@ -44,6 +44,27 @@ Nerd term: evaluate the condition!
                 console.log("Here is the end of the loop")
             }
 
+            function doItAgain() {
+                var aaron = 10
+
+                while (aaron > 0) {
+                    if (aaron == 3) {
+
+                        
+                        alert("Aaron is now: " + aaron)
+                        aaron = aaron -1
+                         
+                    } else {
+                        
+                        console.log("Aaron is now: " + aaron)
+                        aaron = aaron -1
+                        
+                    }
+                }
+            }
+
+
+
 
 
 		</script>
@@ -58,6 +79,7 @@ Nerd term: evaluate the condition!
 		<p id="target"></p>
 
         <button id="secButton">Click me!</button>
+        <button id="thirdButton">Aaron's Button :)</button>
 
 		
 
@@ -65,9 +87,13 @@ Nerd term: evaluate the condition!
 		document.getElementById("looper").onclick=function(){
 			doItAgain();
 			this.style.color = "blue";
+            // "this" means this particular object, in this case the ID document
 		}
 		document.getElementById("secButton").onclick=function(){
             doIt();
+		}
+		document.getElementById("thirdButton").onclick=function(){
+            doItAgain();
 		}
 
 
