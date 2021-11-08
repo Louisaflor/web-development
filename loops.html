@@ -44,7 +44,7 @@ Nerd term: evaluate the condition!
                 console.log("Here is the end of the loop")
             }
 
-            function doItAgain() {
+            function secdoItAgain() {
                 var aaron = 10
 
                 while (aaron > 0) {
@@ -61,6 +61,20 @@ Nerd term: evaluate the condition!
                         
                     }
                 }
+            }
+
+            function thirdDoItAgain() {
+                var loukas = 15
+
+                while (loukas > 0) {
+                    var para = document.getElementById("secTarget");
+                    para.innerHTML =   "loukas is now: " + loukas + "<br>" + para.innerHTML ;
+                    console.log("Loukas console is now: " + loukas)
+                    loukas = loukas -1 
+                }
+                console.log("This is the end of the loop");
+                var button = document.getElementById("fourthButton");
+                button.innerHTML = "Done looping!" // i could also do button.value as well if i put a value in my html tag
             }
 
 
@@ -80,6 +94,8 @@ Nerd term: evaluate the condition!
 
         <button id="secButton">Click me!</button>
         <button id="thirdButton">Aaron's Button :)</button>
+        <button id="fourthButton">Louisa's Button!</button>
+        <p id="secTarget"></p>
 
 		
 
@@ -93,7 +109,10 @@ Nerd term: evaluate the condition!
             doIt();
 		}
 		document.getElementById("thirdButton").onclick=function(){
-            doItAgain();
+            secdoItAgain();
+		}
+		document.getElementById("fourthButton").onclick=function(){
+            thirdDoItAgain();
 		}
 
 
