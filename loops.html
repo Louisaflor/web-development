@@ -77,6 +77,17 @@ Nerd term: evaluate the condition!
                 button.innerHTML = "Done looping!" // i could also do button.value as well if i put a value in my html tag
             }
 
+            function fourthDoItAgain() {
+
+                for (var i = 10; i >= 0; i--) {
+                    var target = document.getElementById("thirdTarget");
+                    target.innerHTML = "This new target is: " + i + "<br>" + target.innerHTML;
+                    console.log("In the console, the target is now: " + i)
+                    
+                }
+                console.log("End of loop")
+            }
+
 
 
 
@@ -95,7 +106,9 @@ Nerd term: evaluate the condition!
         <button id="secButton">Click me!</button>
         <button id="thirdButton">Aaron's Button :)</button>
         <button id="fourthButton">Louisa's Button!</button>
+        <button id="fifthButton">Loukas's Button!</button>
         <p id="secTarget"></p>
+        <p id="thirdTarget"></p>
 
 		
 
@@ -110,9 +123,12 @@ Nerd term: evaluate the condition!
 		}
 		document.getElementById("thirdButton").onclick=function(){
             secdoItAgain();
-		}
+        }
 		document.getElementById("fourthButton").onclick=function(){
             thirdDoItAgain();
+		}
+		document.getElementById("fifthButton").onclick=function(){
+            fourthDoItAgain();
 		}
 
 
