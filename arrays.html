@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -13,7 +14,9 @@
 
 		<h1>Looping can make your code spin!</h1>
 		<input type="button" id="looper" value="Do it again!">
+		<input type="button" id="secLooper" value="Do it again!">
 		<p id="target"></p>
+        <p id="secTarget"></p>
 
 	<script>
 		document.getElementById("looper").onclick=function(){
@@ -22,7 +25,18 @@
 
 			document.getElementById("target").innerHTML = dogs[2];
             alert(dogs)
+
 		}
+
+        document.getElementById("secLooper").onclick = function() {
+
+            var dogs = ["German Shepherd", " Poodle", " Beagle"];
+            var cats = ["cat1 ", "cat2 ", "cat3 ", dogs]
+            document.getElementById("secTarget").innerHTML = cats[3];
+            alert("this is an alert stating the array which is: " + cats)
+            
+
+        }
 	</script>
 	</body>
 </html>
