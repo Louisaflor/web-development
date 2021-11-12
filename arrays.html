@@ -31,9 +31,19 @@
         document.getElementById("secLooper").onclick = function() {
 
             var dogs = ["German Shepherd", " Poodle", " Beagle"];
-            var cats = ["cat1 ", "cat2 ", "cat3 ", dogs]
-            document.getElementById("secTarget").innerHTML = cats[3];
-            alert("this is an alert stating the array which is: " + cats)
+            var cats = ["cat1", " cat2 ", "cat3 " + dogs.sort()]
+
+            dogs.push("push dog")
+            document.getElementById("secTarget").innerHTML = cats;
+            alert("this is an alert stating the array which is: " + cats.sort())
+            /*a property we can also use is cats.length, this will display how many items we have 
+            in our array, FYI sort is a function thats why is has '()' */
+
+            for (index = 0; index < dogs.length; index++) {
+                alert(dogs[index]);
+            }
+
+
             
 
         }
