@@ -30,7 +30,12 @@
 
 		function aFunction() {
 			var rightButton = document.getElementById("rightbutt");
-			rightButton.value = "What?";
+			rightButton.value = "What? right";
+			//alert(rightButton.value);
+		}
+		function bFunction() {
+			var leftButton = document.getElementById("leftbutt");
+			leftButton.value = "What? left";
 			//alert(rightButton.value);
 		}
 
@@ -42,7 +47,7 @@
 		}
 
 		document.getElementById("leftbutt").onclick=function(){	
-			 aFunction();
+			 bFunction();
 			
 		}
 
