@@ -28,26 +28,21 @@
 	Use functions to: (1)package up code, to (2)control when it runs and to (3)reuse code in different places. Less code, the better!
 	*/
 
-		function aFunction() {
-			var rightButton = document.getElementById("rightbutt");
-			rightButton.value = "What? right";
-			//alert(rightButton.value);
+		function aFunction(aButton) {
+			var button = document.getElementById(aButton);
+			button.value = "It clicked!";
 		}
-		function bFunction() {
-			var leftButton = document.getElementById("leftbutt");
-			leftButton.value = "What? left";
-			//alert(rightButton.value);
-		}
+		
 
 
 
 		document.getElementById("rightbutt").onclick=function(){	
-			 aFunction();
+			 aFunction(this.id);
 			
 		}
 
 		document.getElementById("leftbutt").onclick=function(){	
-			 bFunction();
+			 aFunction(this.id);
 			
 		}
 
