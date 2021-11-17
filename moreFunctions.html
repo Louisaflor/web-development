@@ -17,7 +17,10 @@
 			
 			<h1>More about Functions</h1>
 			<input type="button" id="leftbutt" value="Do it!">
+            <br>
+			<input type="button" id="butt" value="Do it again!">
 			<input type="button" id="rightbutt" value="Do it again!">
+            
 			<p id="target"></p>
 
 		</div>
@@ -45,6 +48,14 @@
 			 aFunction(this.id);
 			
 		}
+
+        function pass(argu) {
+            return "This function is returning this phrase and the argument: " + argu;
+        }
+
+        document.getElementById("butt").onclick = function() {
+            alert(pass("here"))
+        }
 
 	
 	</script>
