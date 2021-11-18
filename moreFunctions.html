@@ -7,7 +7,7 @@
 <style type="text/css">
 	div {position: relative}
 	h1 {margin: 25px auto; width: 100%; background-color: #E84B0D; text-align: center; font-size: 24px; font-family: sans-serif; color: #FFF}
-	#rightbutt {float: right;}
+	#rightbutt, #bottombutt {float: right;}
 	#leftbutt, #rightbutt {width: 100px}
 </style>
 
@@ -20,6 +20,8 @@
             <br>
 			<input type="button" id="butt" value="Do it again!">
 			<input type="button" id="rightbutt" value="Do it again!">
+            <br>
+			<input type="button" id="bottombutt" value="This will show name">
             
 			<p id="target"></p>
 
@@ -36,7 +38,14 @@
 			button.value = "It clicked!";
 		}
 		
+        function pass(argu) {
+            return "This function is returning this phrase and the argument: " + argu;
+        }
 
+
+        function twoPass(first, last) {
+            return "Your first name is " + first + "\nAnd your last name is: " + last
+        }
 
 
 		document.getElementById("rightbutt").onclick=function(){	
@@ -49,13 +58,31 @@
 			
 		}
 
-        function pass(argu) {
-            return "This function is returning this phrase and the argument: " + argu;
-        }
-
         document.getElementById("butt").onclick = function() {
             alert(pass("here"))
         }
+
+        document.getElementById("bottombutt").onclick = function() {
+            console.log(twoPass("Louisa", "Yonzon"))
+
+        }
+
+        /* Global variables vs Local Variables
+    Global: it is when you are declaring a var outside of a function,you can use this in any place in JS
+    Local: it is when you declare a var inside a func, they cannot be directly accessed outside the func */
+
+    var global = "This is a var outside of a func!"
+    
+    alert(global)
+
+    function local() {
+        var inside = "This is inside a func!"
+        return inside
+    }
+
+    alert(local())
+
+
 
 	
 	</script>
