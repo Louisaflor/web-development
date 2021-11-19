@@ -7,8 +7,8 @@
 <style type="text/css">
 	div {position: relative}
 	h1 {margin: 25px auto; width: 100%; background-color: #E84B0D; text-align: center; font-size: 24px; font-family: sans-serif; color: #FFF}
-	#rightbutt, #bottombutt {float: right;}
-	#leftbutt, #rightbutt {width: 100px}
+	#rightbutt, #bottombutt {float: right; }
+	#leftbutt, #rightbutt {width: 100px; }
 </style>
 
 	</head>
@@ -22,6 +22,7 @@
 			<input type="button" id="rightbutt" value="Do it again!">
             <br>
 			<input type="button" id="bottombutt" value="This will show name">
+			<input type="button" id="multi" value="Name, Last, Age">
             
 			<p id="target"></p>
 
@@ -47,6 +48,14 @@
             return "Your first name is " + first + "\nAnd your last name is: " + last
         }
 
+        function multiReturn(first, last, age) {
+            var fullName = first + " " + last;
+            var age = "Age: " + age;
+            var namePackage = [fullName, age]
+
+            return namePackage
+        }
+
 
 		document.getElementById("rightbutt").onclick=function(){	
 			 aFunction(this.id);
@@ -64,6 +73,12 @@
 
         document.getElementById("bottombutt").onclick = function() {
             console.log(twoPass("Louisa", "Yonzon"))
+
+        }
+        
+        document.getElementById("multi").onclick = function() {
+            var myNameArray = multiReturn("Louisa", "Yonzon", 24);
+            console.log(myNameArray[0])
 
         }
 
