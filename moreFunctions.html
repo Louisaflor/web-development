@@ -7,8 +7,9 @@
 <style type="text/css">
 	div {position: relative}
 	h1 {margin: 25px auto; width: 100%; background-color: #E84B0D; text-align: center; font-size: 24px; font-family: sans-serif; color: #FFF}
-	#rightbutt, #bottombutt {float: right; }
-	#leftbutt, #rightbutt {width: 100px; }
+	#rightbutt, #butt, #if {float: right;}
+	#leftbutt, #rightbutt, #bottombutt, #butt, #multi, #if  {width: 160px; margin: 5px;}
+     
 </style>
 
 	</head>
@@ -17,12 +18,16 @@
 			
 			<h1>More about Functions</h1>
 			<input type="button" id="leftbutt" value="Do it!">
-            <br>
 			<input type="button" id="butt" value="Do it again!">
-			<input type="button" id="rightbutt" value="Do it again!">
             <br>
+			
+			<input type="button" id="rightbutt" value="Do it again!">
 			<input type="button" id="bottombutt" value="This will show name">
+            <br>
 			<input type="button" id="multi" value="Name, Last, Age">
+            <input type="button" id="if" value="num true or false">
+            <br>
+            
             
 			<p id="target"></p>
 
@@ -56,6 +61,18 @@
             return namePackage
         }
 
+        function checkAge(age) {
+            var oldEnough;
+
+            if (age > 17) {
+                oldEnough = true;
+            } else {
+                oldEnough = false;
+            }
+
+            return oldEnough;
+        }
+
 
 		document.getElementById("rightbutt").onclick=function(){	
 			 aFunction(this.id);
@@ -75,10 +92,15 @@
             console.log(twoPass("Louisa", "Yonzon"))
 
         }
-        
+
         document.getElementById("multi").onclick = function() {
             var myNameArray = multiReturn("Louisa", "Yonzon", 24);
             console.log(myNameArray[0])
+
+        }
+
+        document.getElementById("if").onclick = function() {
+            console.log(checkAge(4))
 
         }
 
