@@ -39,7 +39,7 @@ function myFunction() {
 
 */
 
-// #1 innter.html
+// #1 inner.html
 
 /* for this one we didnt put this inside of a function so when we run it in the web
 page it does it automatically, if we want to control when it runs then we add a function then 
@@ -47,6 +47,27 @@ we can activate it however we want  */
 
 var targetDiv = document.getElementById("theDiv");
 var text = "<p> Blah Blad </p> <h1> The Blah </h1>"
-targetDiv.innerHTML = targetDiv.innerHTML + text;
+targetDiv.innerHTML =  text + targetDiv.innerHTML ;
+
+
+// #2 DOM manipulation method 
+
+function addNewContent() {
+
+    // Step 1: create a tag, Step 2: add text to it 
+    var para = document.createElement("p")
+    var node = document.createTextNode("The newer text")
+    para.appendChild(node)
+
+    //Step 3: add the new <p> tag to the <div>
+        var targetDiv = document.getElementById("theDiv")
+        targetDiv.appendChild(para)
+        console.log(targetDiv.appendChild(para))
+
+}
+
+document.getElementById("button").onclick = function() {
+    addNewContent();
+}
 
 </script>
