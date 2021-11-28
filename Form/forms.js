@@ -29,6 +29,8 @@ function validateForm() {
         //you have the use firstName b/c its the one you want to select to highlight it 
 
         return false;
-        console.log("This will only appear if you did not 'Louisa")
+
+        console.log("This will only appear if you did not 'Louisa") 
+        // this will not appear b/c we are putting it after the return false
     }
 }
