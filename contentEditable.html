@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>content Editable</title>
+        <style type="text/css"> 
+        #content {background-color: #DFE4DF; width: 400px; height: 200px; padding: 20px; margin: 0 auto; margin-top: 20px; margin-bottom: 20px; }
+        main {margin: auto; width: 50%}
+
+        </style>
+    </head>
+
+    <body>
+        <main>
+            <button onclick="startEdit()">Start Editing</button>
+            <button onclick="stopEdit()">Finish Editing</button>
+
+            <p id="content"></p>
+        </main>
+
+        <script type="text/javascript">
+
+        function startEdit() {
+            var content = document.getElementById("content");
+            content.contentEditable = true
+            content.focus()
+        }
+
+        function stopEdit() {
+            var content = document.getElementById("content");
+            content.contentEditable = false 
+            alert("Your new text displays: \n" + content.innerHTML)
+
+        }
+
+        </script>
+    </body>
+</html>
