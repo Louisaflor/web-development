@@ -19,6 +19,18 @@
 
         <script>
             document.getElementById("whiteBoard").onclick = function() {
+                var canvas = document.getElementById("whiteBoard");
+                var context = canvas.getContext("2nd");
+
+                //setting all the lines width and color
+                context.lineWidth = 30; //dont put px 
+                context.strokeStyle = "purple";
+
+
+                context.moveTo(25, 50); // moving line horizontal first, moving line vertical
+                context.lineTo(150, 50) //end of the line 
+                context.lineCap = "butt";
+                context.stroke();
 
             }
 
