@@ -3,17 +3,25 @@
     <head>
         <title>Drawing on Canvas</title>
         <style>
+            #whiteBoard { border: 1px dashed black; padding: 10px; margin: 0 auto; display: block;}
+            main {margin: 0 auto; width: 50%; }
 
         </style>
     </head>
 
     <body>
-        <h2>Drawing on screen with JS</h2>
+        <main>
+            <h2>Drawing on screen with JS</h2>
 
-        <canvas id="whiteBoard" height="400px" width="300px"></canvas>
+            <canvas id="whiteBoard" height="400px" width="400px"></canvas>
+
+        </main>
 
         <script>
-            
+            document.getElementById("whiteBoard").onclick = function() {
+
+            }
+
         </script>
     </body>
 
