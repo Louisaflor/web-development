@@ -20,15 +20,26 @@
         <script>
             document.getElementById("whiteBoard").onclick = function() {
                 var canvas = document.getElementById("whiteBoard");
-                var context = canvas.getContext("2nd");
+                var context = canvas.getContext("2d");
 
-                //setting all the lines width and color
+                //setting width and color for both lines
                 context.lineWidth = 30; //dont put px 
                 context.strokeStyle = "purple";
 
+                //first line
+                context.moveTo(50, 100); // moving line horizontal first, moving line vertical
+                context.lineTo(200, 100) //end of the line 
+                context.lineCap = "butt";
+                context.stroke();
 
-                context.moveTo(25, 50); // moving line horizontal first, moving line vertical
-                context.lineTo(150, 50) //end of the line 
+                //setting second line width and color
+                context.lineWidth = 15;
+                context.strokeStyle = "#95CA91";
+
+                //second line 
+                context.beginPath(); //this starts another line
+                context.moveTo(50, 200);
+                context.lineTo(200, 200)
                 context.lineCap = "butt";
                 context.stroke();
 
