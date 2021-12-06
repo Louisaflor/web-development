@@ -20,6 +20,32 @@
             <canvas id="whiteBoard" width="400px" height="400px"></canvas>
         </main>
 
+        <script>
+
+        //apparently you can grab this code online, this is to get random colors using the hex
+        function getRandomColor() {
+                var letters = '0123456789ABCDEF'.split('');
+                var color = '#';
+                for (var i = 0; i < 6; i++ ) {
+                    color += letters[Math.floor(Math.random() * 16)];
+                }
+                return color;
+            }
+
+            //function that created random lines 
+
+        function discoSquare() {
+
+            var canvas = document.getElementById("whiteBoard");
+            var context = canvas.getContext("2d";)
+
+            //setting the vertical position for all lines to be random, needs to be in between 1 and 399
+            var verticalPos = Math.floor((Math.random() * 399) + 1)
+            // storing function in a var 
+            var color = getRandomColor();
+        }
+        </script>
+
     </body>
 
 </html>
