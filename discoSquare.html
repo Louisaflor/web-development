@@ -42,7 +42,14 @@
             //setting the vertical position for all lines to be random, needs to be in between 1 and 399
             var verticalPos = Math.floor((Math.random() * 399) + 1)
             // storing function in a var 
-            var color = getRandomColor();
+            var randomColor = getRandomColor();
+
+            //setting width and color for all lines 
+            context.lineWidth = 10; //how thick you want the line
+            context.strokeStyle = randomColor;
+            //making the line
+            context.moveTo(10, verticalPos); 
+            context.lineTo(400, verticalPos)
         }
         </script>
 
