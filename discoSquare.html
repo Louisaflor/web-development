@@ -18,6 +18,8 @@
             </div>
 
             <canvas id="whiteBoard" width="400px" height="400px"></canvas>
+
+            <p id="placeTheColorName"></p>
         </main>
 
         <script>
@@ -32,12 +34,12 @@
                 return color;
             }
 
-            //function that created random lines 
+            //function that creates random lines 
 
         function discoSquare() {
 
             var canvas = document.getElementById("whiteBoard");
-            var context = canvas.getContext("2d";)
+            var context = canvas.getContext("2d")
 
             //setting the vertical position for all lines to be random, needs to be in between 1 and 399
             var verticalPos = Math.floor((Math.random() * 399) + 1)
@@ -46,10 +48,17 @@
 
             //setting width and color for all lines 
             context.lineWidth = 10; //how thick you want the line
-            context.strokeStyle = randomColor;
+            context.strokeStyle = randomColor; // color of the lines
+
             //making the line
-            context.moveTo(10, verticalPos); 
-            context.lineTo(400, verticalPos)
+            context.moveTo(10, verticalPos); //left-right, up-down: start of line
+            context.lineTo(400, verticalPos); //end of line
+            context.lineCap = "butt";
+            context.stroke(); //connecting the moveTo and lineTo 
+            console.log("vertical position: " + verticalPos);
+            
+            document.getElementById("placeTheColorName").innerHTML = randomColor;
+
         }
         </script>
 
