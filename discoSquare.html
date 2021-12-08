@@ -5,7 +5,7 @@
         <style>
             main {width: 50%; margin: 0 auto; border: black solid; padding: 10px ;}
             #buttons {margin: auto;  padding: 10px; text-align: center;}
-            canvas {border: 1px dashed black; margin: 0 auto; display: block;  }
+            canvas {border: 1px dashed black; margin: 0 auto; display: block; padding: 10px;  }
 
         </style>
     </head>
@@ -13,8 +13,8 @@
     <body>
         <main>
             <div id="buttons">
-            <button>Start the Show!</button>
-            <button>Start the Show!</button>
+            <button id="discoStart">Start the Show!</button>
+            <button id="discoStop">Stop the Show!</button>
             </div>
 
             <canvas id="whiteBoard" width="400px" height="400px"></canvas>
@@ -23,6 +23,8 @@
         </main>
 
         <script>
+
+            var notRunning = true //prevents from bugging when pressing the start button
 
         //apparently you can grab this code online, this is to get random colors using the hex
         function getRandomColor() {
@@ -56,10 +58,33 @@
             context.lineCap = "butt";
             context.stroke(); //connecting the moveTo and lineTo 
             console.log("vertical position: " + verticalPos);
-            
+
             document.getElementById("placeTheColorName").innerHTML = randomColor;
 
         }
+
+        var animation; //global variables: placed this outside of function so that we may use this on any function
+        
+        //when pressing the start button it will activate the discoSquare function
+
+        document.getElementById("discoStart").onclick = function() {
+
+            if (notRunning) {
+                animation = setInterval (discoSquare, 100);
+                notRunning = false;
+            } else {
+                alert("Don't click, still running")
+            }
+        }
+
+        document.getElementById("discoStop").onclick = function() {
+            clearInterval(animation); //stops the interval 
+            notRunning = true;
+        }
+        
+        
+
+
         </script>
 
     </body>
